@@ -1,3 +1,41 @@
+---------------------------------------------------------------  ReadMe pour les mise à jour  --------------------------------------------------------------------
+
+j'ai changer les informations de connexion pour me connecter vers mon instance de Server SQl dans le appsettings.json puis j'ai fait le push vers mon repos github
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1.)  Erreur 1  trouvé : aprés le lancement de l'application j'ai accéder à la page d'accueil puis j'ai voulu me connecter en tant que administrateur du coup je dois remplir le login et le password. Je me suis rendu compte que le 
+   ### password n'est pas cacher #### 
+   ## correction :  j'ai ajouter un input type="password" dans le Login.cshtml  ##
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.) Erreur 2 trouvé :Lors de la création d'un produit, les champs comme Nom, Prix et Stock sont obligatoires du coup si l'admin ne les rensigne pas il doit afficher des messages
+### personalisés comme par exemple "veiller renseigner le nom du produit" ou même "veiller renseigner le prix du produit" etc..  au niveau du champ concernant  ###
+ ## Correction:##
+  # Ajouter  [Required(ErrorMessage = "Veiller renseigner le nom du produit")] ,  [Required(ErrorMessage = "Veiller renseigner le stock du produit")] et 
+  [Required(ErrorMessage = "Veiller renseigner le prix du produit")] dans mon ProductViewModel pour les champs respectives Nom, Prix et Stock . 
+  # Ensuite dans mon fichier Product/Create.cshtml  ajouter  <span asp-validation-for="Name" class="text-danger"></span>,  <span asp-validation-for="Stock" class="text-danger"></span> et  <span asp-validation-for="Price" class="text-danger"></span> aprés les Label Name, Price et Stock
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+3.) Erreur 3 trouvé :
+   ## Le stock doit etre un entier positif et non nul donc l'admin ne doit pas avoir la possibilité de saisir de lettres ou de caractères 
+   ## Correction : Modifier le type="text" du input en type="number" pour le label Stock dans le fichier Product/Create.cshtml
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+4.) Erreur 4 trouvé : 
+   ## Le prix doit etre un nombre decimal donc l'admin ne doit pas avoir la possibilité de saisir de lettres ou de caractères
+   ## Correction : Ajouter un input type="number" aprés le Label Price dans Product/Create.cshtml
+
+
+
+
+
+
+
+
+
+
+
+
+
 # DotNetEnglishP3
 Dépôt de l’étudiant pour le projet 3 du parcours Développeur Back-End .NET. Afin d'être au plus proche d'une situation professionnelle réelle, le code dans ce dépôt est en anglais.
 
@@ -36,3 +74,8 @@ Si vous avez installé MSSQL Express, la valeur à utiliser pour Server est trè
   
 Si vous avez des difficultés à vous connecter, essayez d’abord de vous connecter à l’aide de Microsoft SQL Server Management Studio (assurez-vous que le type d’authentification est « Authentification Windows »), ou consultez le site https://sqlserver-help.com/2011/06/19/help-whats-my-sql-server-name/.
 Si le problème persiste, demandez de l’aide à votre mentor.
+
+
+
+
+
