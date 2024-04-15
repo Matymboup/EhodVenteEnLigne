@@ -117,16 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LanguageEnglish" xml:space="preserve">
-    <value>English</value>
+  <data name="MissingName" xml:space="preserve">
+    <value>Yal na nga bind benn tur</value>
   </data>
-  <data name="LanguageFrench" xml:space="preserve">
-    <value>French</value>
+  <data name="MissingPrice" xml:space="preserve">
+    <value>Jëfandikukat:</value>
   </data>
-  <data name="LanguageSpanish" xml:space="preserve">
-    <value>Spanish</value>
+  <data name="MissingStock" xml:space="preserve">
+    <value>Wàll:Jëfandikukat .</value>
   </data>
-  <data name="LanguageWolof" xml:space="preserve">
-    <value>Wolof</value>
+  <data name="PriceNotANumber" xml:space="preserve">
+    <value>Wàll bi nga dugal ngir xaalis bi war na nekk ab lim.</value>
+  </data>
+  <data name="PriceNotGreaterThanZero" xml:space="preserve">
+    <value>Xaalis bi war na ëpp neen.</value>
+  </data>
+  <data name="StockNotAnInteger" xml:space="preserve">
+    <value>Wàll wi ñu dugal ngir dencukaay bi war na nekk benn téeme bu mat sëkk</value>
+  </data>
+  <data name="StockNotGreaterThanZero" xml:space="preserve">
+    <value>Jëfandikukat bi war na am lu ëpp 0</value>
   </data>
 </root>

@@ -117,16 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LanguageEnglish" xml:space="preserve">
-    <value>English</value>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
   </data>
-  <data name="LanguageFrench" xml:space="preserve">
-    <value>French</value>
+  <data name="City" xml:space="preserve">
+    <value>Dëkk</value>
   </data>
-  <data name="LanguageSpanish" xml:space="preserve">
-    <value>Spanish</value>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>Jëfandikukat:</value>
   </data>
-  <data name="LanguageWolof" xml:space="preserve">
-    <value>Wolof</value>
+  <data name="Country" xml:space="preserve">
+    <value>réew</value>
+  </data>
+  <data name="EnterDetails" xml:space="preserve">
+    <value>danoo nuko toppatoo ci saa si!</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Jëfandikoo</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>tur</value>
+  </data>
+  <data name="OrderTitle" xml:space="preserve">
+    <value>Yal na nga feesal form bi</value>
+  </data>
+  <data name="ShipSoon" xml:space="preserve">
+    <value>Nu ngi leen ko yónnee ci anam yu gaaw.</value>
+  </data>
+  <data name="ShipTo" xml:space="preserve">
+    <value>yónnee ko</value>
+  </data>
+  <data name="Zip" xml:space="preserve">
+    <value>numoro deuk bi</value>
   </data>
 </root>
