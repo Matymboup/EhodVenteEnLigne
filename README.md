@@ -9,8 +9,7 @@ j'ai changer les informations de connexion pour me connecter vers mon instance d
 2.) Erreur 2 trouvé :Lors de la création d'un produit, les champs comme Nom, Prix et Stock sont obligatoires du coup si l'admin ne les rensigne pas il doit afficher des messages
 ### personalisés comme par exemple "veiller renseigner le nom du produit" ou même "veiller renseigner le prix du produit" etc..  au niveau du champ concernant  ###
  ## Correction:##
-  # Ajouter  [Required(ErrorMessage = "Veiller renseigner le nom du produit")] ,  [Required(ErrorMessage = "Veiller renseigner le stock du produit")] et 
-  [Required(ErrorMessage = "Veiller renseigner le prix du produit")] dans mon ProductViewModel pour les champs respectives Nom, Prix et Stock . 
+   # j'ai crée le fichier  Product.cs pour déclarer nos différents type d'ErrorMessage comme MissingName, MissingPrice etc.. , ensuite au niveau des fichiers .resx Faire la traduction de chaque type de message d'erreur  
   # Ensuite dans mon fichier Product/Create.cshtml  ajouter  <span asp-validation-for="Name" class="text-danger"></span>,  <span asp-validation-for="Stock" class="text-danger"></span> et  <span asp-validation-for="Price" class="text-danger"></span> aprés les Label Name, Price et Stock
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -23,6 +22,13 @@ j'ai changer les informations de connexion pour me connecter vers mon instance d
 4.) Erreur 4 trouvé : 
    ## Le prix doit etre un nombre decimal donc l'admin ne doit pas avoir la possibilité de saisir de lettres ou de caractères
    ## Correction : Ajouter un input type="number" aprés le Label Price dans Product/Create.cshtml
+
+5.) Iternalisation du wolof 
+
+
+6.) Test 
+
+   
 
 
 
